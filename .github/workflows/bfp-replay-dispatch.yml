@@ -1,0 +1,13 @@
+on:
+  workflow_dispatch:
+
+--- a/.github/workflows/build-data.yml
++++ b/.github/workflows/build-data.yml
+@@ -70,4 +70,4 @@
+           commit-message: 'data: Add ${{ steps.meta.outputs.TZDATA_VERSION }}'
+           title: 'data: Add ${{ steps.meta.outputs.TZDATA_VERSION }}'
+           body-path: temp/pr-body.txt
+-          reviewers: ${{ github.actor }}
++          reviewers: ${{ github.actor }}
+
+# bfp-replay-registration: 451b2fc3dccb-llm
